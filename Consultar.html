@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portal DER-ES</title>
+  <meta content="" name="description">
+
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart - v1.9.0
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="#" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span>Portal DER-ES</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#">Início</a></li>
+          <li><a class="nav-link scrollto" href="#">Sobre</a></li>
+          <li><a class="nav-link scrollto" href="#">Serviços</a></li>
+          <li><a class="nav-link scrollto" href="#">Dúvidas</a></li>
+          <li><a class="nav-link scrollto" href="#">Organograma</a></li>
+          <li class="dropdown"><a href="#"><span>Institucional</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">História</a></li>
+              <li class="dropdown"><a href="#"><span>Leis</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="#">Entrar</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="contact" class="contact d-flex align-items-center">
+
+    <div class="container">
+
+      <header class="section-header">
+        <p>Instruções de Serviço</p>
+      </header>
+
+      <div class="row gy-4">
+
+        <div class="col-lg-6">
+            <img src="assets/img/Search.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-6">
+          <form action="forms/contact.php" method="post" class="php-email-form">
+            <div class="row gy-4">
+
+              <div class="col-md-12">
+                <h5>Nº Lei/Ano</h3>
+                <input type="text" name="name" class="form-control" placeholder="Nº Lei/Ano" >
+              </div>
+
+              <div class="col-md-12 ">
+                <h5>Tipo Lei</h3>
+                <select  class="form-control" name="email" placeholder="Tipo Lei" >
+                  <option value="" disabled selected hidden>Escolha Tipo Lei</option>
+                  <option>(TODOS)</option>
+                  <option value="16">DECRETO-R</option>
+                  <option value="18">DECRETO-S</option>
+                  <option value="14">LEI COMPLEMENTAR</option>
+                  <option value="15">LEI DELEGADA</option>
+                  <option value="13">LEI ORDINÁRIA</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <h5>Data Inicial</h3>
+                <input type="date" class="form-control" name="Data_Inicial" placeholder="Data Inicial" value="01/01/0001" >
+              </div>
+              <div class="col-md-12">
+                <h5>Data Final</h3>
+                <input type="date" class="form-control" name="Data_Final" placeholder="Data Final" value="01/01/0001" >
+              </div>
+
+              <div class="col-md-12">
+                <h5>Assunto</h3>
+                <textarea class="form-control" name="message" rows="6" placeholder="Assunto" ></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                <!-- <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div> -->
+
+                <button type="submit" onclick="location.href='#resultado'">Consultar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="resultado" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2></h2>
+          <p>Resultado da Busca</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    DECRETO-R N°: 01267/2004 PUBLICAÇÃO: 09/01/2004 AUTORIA:
+                  </button>
+                </h2>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dispõe sobre a aplicação do limite máximo de remuneração no âmbito da Administração Direta, Autárquica e Fundacional, do Estado do Espírito Santo, nos termos do inciso XI, do art. 37 da Constituição da República, na redação dada pelo artigo 8º, da Emenda Constitucional nº 41, de 19 de dezembro de 2003.
+                    <a href="#">Download</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    DECRETO-R N°: 01268/2004 PUBLICAÇÃO: 10/01/2004 AUTORIA:
+                  </button>
+                </h2>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dispõe sobre a aplicação do limite máximo de remuneração no âmbito da Administração Direta, Autárquica e Fundacional, do Estado do Espírito Santo, nos termos do inciso XI, do art. 37 da Constituição da República, na redação dada pelo artigo 8º, da Emenda Constitucional nº 41, de 19 de dezembro de 2003.
+                    <a href="#">Download</a>                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    DECRETO-R N°: 01269/2004 PUBLICAÇÃO: 10/01/2004 AUTORIA:
+                  </button>
+                </h2>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dispõe sobre a aplicação do limite máximo de remuneração no âmbito da Administração Direta, Autárquica e Fundacional, do Estado do Espírito Santo, nos termos do inciso XI, do art. 37 da Constituição da República, na redação dada pelo artigo 8º, da Emenda Constitucional nº 41, de 19 de dezembro de 2003.
+                    <a href="#">Download</a>                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-4">
+                    DECRETO-R N°: 01269/2004 PUBLICAÇÃO: 10/01/2004 AUTORIA:
+                  </button>
+                </h2>
+                <div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dispõe sobre a aplicação do limite máximo de remuneração no âmbito da Administração Direta, Autárquica e Fundacional, do Estado do Espírito Santo, nos termos do inciso XI, do art. 37 da Constituição da República, na redação dada pelo artigo 8º, da Emenda Constitucional nº 41, de 19 de dezembro de 2003.
+                    <a href="#">Download</a>                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-5">
+                    DECRETO-R N°: 01269/2004 PUBLICAÇÃO: 10/01/2004 AUTORIA:
+                  </button>
+                </h2>
+                <div id="faq-content-5" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dispõe sobre a aplicação do limite máximo de remuneração no âmbito da Administração Direta, Autárquica e Fundacional, do Estado do Espírito Santo, nos termos do inciso XI, do art. 37 da Constituição da República, na redação dada pelo artigo 8º, da Emenda Constitucional nº 41, de 19 de dezembro de 2003.
+                    <a href="#">Download</a>                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer" class="footer">
+
+   
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>FlexStart</span>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
